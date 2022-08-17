@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BreakthroughWPF.App" Collapsed="true">
+    <Position X="2.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BreakthroughWPF.Window1" Collapsed="true">
+    <Position X="2.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCABhCBUgBAQAAAQKAEgGgFI+AIgBAGACkAADQCBA=</HashCode>
+      <FileName>Window1.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BreakthroughWPF.Properties.Resources" Collapsed="true">
+    <Position X="0.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BreakthroughWPF.Properties.Settings" Collapsed="true">
+    <Position X="0.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BreakthroughWPF.Chessboard" Collapsed="true">
+    <Position X="2.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAQQAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Chessboard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BreakthroughWPF.Pawn" Collapsed="true">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAACAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pawn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BreakthroughWPF.Game">
+    <Position X="6" Y="0.5" Width="1.75" />
+    <NestedTypes>
+      <Delegate Name="BreakthroughWPF.Game.MovesDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Game.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="BreakthroughWPF.Game.ChangeStatBar" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Game.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="BreakthroughWPF.Game.VoidNoArgDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Game.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="BreakthroughWPF.Game.LogDel" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Game.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>EAQAKAAAAMICAAAQEEgBIAAAAAAEBuAAACA0pBgIABA=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BreakthroughWPF.Player" Collapsed="true">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAACAAAAAAAgAAIAAAAAAAAIEBAEAAABEAAAEAAA=</HashCode>
+      <FileName>Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BreakthroughWPF.HumanPlayer" Collapsed="true">
+    <Position X="3.25" Y="1.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="BreakthroughWPF.HumanPlayer.HumanPlayerInvalidChessBoardException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>HumanPlayer.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <InheritanceLine Type="BreakthroughWPF.Player" ManuallyRouted="true">
+      <Path>
+        <Point X="2.75" Y="1.023" />
+        <Point X="2.75" Y="1.26" />
+        <Point X="4" Y="1.26" />
+        <Point X="4" Y="1.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAA=</HashCode>
+      <FileName>HumanPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BreakthroughWPF.ComputerPlayer" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAACAAAAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAA=</HashCode>
+      <FileName>ComputerPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BreakthroughWPF.VisualChessboard" Collapsed="true">
+    <Position X="2.75" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="BreakthroughWPF.VisualChessboard.DeletePawnDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>VisualChessboard.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="BreakthroughWPF.VisualChessboard.PlacePawnDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>VisualChessboard.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <InheritanceLine Type="BreakthroughWPF.Chessboard" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="3.523" />
+        <Point X="3.5" Y="3.627" />
+        <Point X="3.446" Y="3.627" />
+        <Point X="3.446" Y="3.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>QAEAIQQAAABhAAQBAggAACAAAEAMAAQAgAAAAAACsIA=</HashCode>
+      <FileName>VisualChessboard.cs</FileName>
+      <NewMemberFileName>VisualChessBoard.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BreakthroughWPF.VisualPawn" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="BreakthroughWPF.VisualPawn.SetPos" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>VisualPawn.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="BreakthroughWPF.VisualPawn.CustomMoveDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>VisualPawn.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="BreakthroughWPF.VisualPawn.ShapeMoveDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>VisualPawn.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>IgAAAAAAACAogQCAQgJAAAAAAAgIAECAAAgCACAiAAA=</HashCode>
+      <FileName>VisualPawn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BreakthroughWPF.Pair" Collapsed="true">
+    <Position X="4" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Pair.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BreakthroughWPF.GameStory" Collapsed="true">
+    <Position X="3.75" Y="2.25" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="BreakthroughWPF.GameStory.NewItemDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GameStory.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="BreakthroughWPF.GameStory.NoArgDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GameStory.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="BreakthroughWPF.GameStory.ButtonDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GameStory.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="BreakthroughWPF.GameStory.AddDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GameStory.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="BreakthroughWPF.GameStory.SelectDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GameStory.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="BreakthroughWPF.GameStory.RemoveDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GameStory.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAQCBAAAAhAAAAQBAAAICAAAAOQQABBABgA=</HashCode>
+      <FileName>GameStory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BreakthroughWPF.ReaderWriterCustomLock&lt;T&gt;" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="3" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAA=</HashCode>
+      <FileName>ReaderWriterCustomLock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BreakthroughWPF.ComputerAIPlayer" Collapsed="true">
+    <Position X="1" Y="2.25" Width="2" />
+    <NestedTypes>
+      <Delegate Name="BreakthroughWPF.ComputerAIPlayer.MoveToDel" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ComputerAIPlayer.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="BreakthroughWPF.ComputerAIPlayer.NoArgDel" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ComputerAIPlayer.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Class Name="BreakthroughWPF.ComputerAIPlayer.ComputerPlayerInvalidChessBoardException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ComputerAIPlayer.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Struct Name="BreakthroughWPF.ComputerAIPlayer.SMove" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ComputerAIPlayer.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAEAAASYAQAAAAgAQAAAAAAAAAAgBAAAAABIACAQAAA=</HashCode>
+      <FileName>ComputerAIPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BreakthroughWPF.About" Collapsed="true">
+    <Position X="4.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>About.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BreakthroughWPF.newGameWindow" Collapsed="true">
+    <Position X="0.5" Y="7" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>newGameWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="BreakthroughWPF.PiecesColor">
+    <Position X="4.5" Y="3" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>PiecesColor.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BreakthroughWPF.GameState" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAACAIAQAAAAAAAIAAAABAAAAAAEAQAA=</HashCode>
+      <FileName>GameState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.7" />
+</ClassDiagram>

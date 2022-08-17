@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BreakthroughWPF.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="endpointAddressPattern" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">net.tcp://{0}:{1}/BreakthroughWPF/GameConnectionService/</Value>
+    </Setting>
+    <Setting Name="defaultGameConnectionServicePort" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">8731</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

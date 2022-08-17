@@ -1,0 +1,47 @@
+C:\Users\Norbert\Desktop\BTfinal\BTfinal\src\BreakthroughWPF\bin\Debug\BreakthroughWPF.exe.manifest
+C:\Users\Norbert\Desktop\BTfinal\BTfinal\src\BreakthroughWPF\bin\Debug\BreakthroughWPF.application
+C:\Users\Norbert\Desktop\BTfinal\BTfinal\src\BreakthroughWPF\bin\Debug\BreakthroughWPF.exe
+C:\Users\Norbert\Desktop\BTfinal\BTfinal\src\BreakthroughWPF\bin\Debug\BreakthroughWPF.pdb
+C:\Users\Norbert\Desktop\BTfinal\BTfinal\src\BreakthroughWPF\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Norbert\Desktop\BTfinal\BTfinal\src\BreakthroughWPF\obj\Debug\About.baml
+C:\Users\Norbert\Desktop\BTfinal\BTfinal\src\BreakthroughWPF\obj\Debug\newGameWindow.baml
+C:\Users\Norbert\Desktop\BTfinal\BTfinal\src\BreakthroughWPF\obj\Debug\Window1.baml
+C:\Users\Norbert\Desktop\BTfinal\BTfinal\src\BreakthroughWPF\obj\Debug\About.g.cs
+C:\Users\Norbert\Desktop\BTfinal\BTfinal\src\BreakthroughWPF\obj\Debug\newGameWindow.g.cs
+C:\Users\Norbert\Desktop\BTfinal\BTfinal\src\BreakthroughWPF\obj\Debug\Window1.g.cs
+C:\Users\Norbert\Desktop\BTfinal\BTfinal\src\BreakthroughWPF\obj\Debug\App.g.cs
+C:\Users\Norbert\Desktop\BTfinal\BTfinal\src\BreakthroughWPF\obj\Debug\BreakthroughWPF_MarkupCompile.cache
+C:\Users\Norbert\Desktop\BTfinal\BTfinal\src\BreakthroughWPF\obj\Debug\BreakthroughWPF.g.resources
+C:\Users\Norbert\Desktop\BTfinal\BTfinal\src\BreakthroughWPF\obj\Debug\BreakthroughWPF.Properties.Resources.resources
+C:\Users\Norbert\Desktop\BTfinal\BTfinal\src\BreakthroughWPF\obj\Debug\BreakthroughWPF.csproj.GenerateResource.Cache
+C:\Users\Norbert\Desktop\BTfinal\BTfinal\src\BreakthroughWPF\obj\Debug\BreakthroughWPF.exe.manifest
+C:\Users\Norbert\Desktop\BTfinal\BTfinal\src\BreakthroughWPF\obj\Debug\BreakthroughWPF.application
+C:\Users\Norbert\Desktop\BTfinal\BTfinal\src\BreakthroughWPF\obj\Debug\BreakthroughWPF.exe
+C:\Users\Norbert\Desktop\BTfinal\BTfinal\src\BreakthroughWPF\obj\Debug\BreakthroughWPF.pdb
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\obj\Debug\BreakthroughWPF.exe
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\obj\Debug\BreakthroughWPF.pdb
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\bin\Debug\BreakthroughWPF.exe.manifest
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\bin\Debug\BreakthroughWPF.application
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\bin\Debug\BreakthroughWPF.exe
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\bin\Debug\BreakthroughWPF.pdb
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\obj\Debug\About.baml
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\obj\Debug\newGameWindow.baml
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\obj\Debug\Window1.baml
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\obj\Debug\About.g.cs
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\obj\Debug\newGameWindow.g.cs
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\obj\Debug\Window1.g.cs
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\obj\Debug\App.g.cs
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\obj\Debug\BreakthroughWPF_MarkupCompile.cache
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\obj\Debug\BreakthroughWPF.g.resources
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\obj\Debug\BreakthroughWPF.Properties.Resources.resources
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\obj\Debug\BreakthroughWPF.csproj.GenerateResource.Cache
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\obj\Debug\BreakthroughWPF.exe.manifest
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\obj\Debug\BreakthroughWPF.application
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\bin\Debug\BreakthroughWPF.exe.config
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\obj\Debug\NewNetworkGameWindow.baml
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\obj\Debug\NewNetworkGameWindow.g.cs
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\obj\Debug\ParticipantsWindow.baml
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\obj\Debug\ParticipantsWindow.g.cs
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\obj\Debug\OperationPendingBox.baml
+C:\Users\Norbert\Documents\College\mim s4\JNP2\BTfinal\src\BreakthroughWPF\obj\Debug\OperationPendingBox.g.cs

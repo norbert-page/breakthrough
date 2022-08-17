@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://BreakthroughWPF" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="http://BreakthroughWPF" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://BreakthroughWPF/Imports">
+      <xsd:import namespace="http://BreakthroughWPF" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/BreakthroughWPF" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IGameConnectionService_IsAlive_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsAlive" />
+  </wsdl:message>
+  <wsdl:message name="IGameConnectionService_IsAlive_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsAliveResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGameConnectionService_Invite_InputMessage">
+    <wsdl:part name="parameters" element="tns:Invite" />
+  </wsdl:message>
+  <wsdl:message name="IGameConnectionService_Invite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InviteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGameConnectionService_InviteWelcome_InputMessage">
+    <wsdl:part name="parameters" element="tns:InviteWelcome" />
+  </wsdl:message>
+  <wsdl:message name="IGameConnectionService_InviteWelcome_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InviteWelcomeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGameConnectionService_NextMove_InputMessage">
+    <wsdl:part name="parameters" element="tns:NextMove" />
+  </wsdl:message>
+  <wsdl:message name="IGameConnectionService_NextMove_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NextMoveResponse" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="true" name="IGameConnectionService">
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="IsAlive">
+      <wsdl:input wsaw:Action="http://BreakthroughWPF/IGameConnectionService/IsAlive" message="tns:IGameConnectionService_IsAlive_InputMessage" />
+      <wsdl:output wsaw:Action="http://BreakthroughWPF/IGameConnectionService/IsAliveResponse" message="tns:IGameConnectionService_IsAlive_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Invite">
+      <wsdl:input wsaw:Action="http://BreakthroughWPF/IGameConnectionService/Invite" message="tns:IGameConnectionService_Invite_InputMessage" />
+      <wsdl:output wsaw:Action="http://BreakthroughWPF/IGameConnectionService/InviteResponse" message="tns:IGameConnectionService_Invite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="InviteWelcome">
+      <wsdl:input wsaw:Action="http://BreakthroughWPF/IGameConnectionService/InviteWelcome" message="tns:IGameConnectionService_InviteWelcome_InputMessage" />
+      <wsdl:output wsaw:Action="http://BreakthroughWPF/IGameConnectionService/InviteWelcomeResponse" message="tns:IGameConnectionService_InviteWelcome_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="NextMove">
+      <wsdl:input wsaw:Action="http://BreakthroughWPF/IGameConnectionService/NextMove" message="tns:IGameConnectionService_NextMove_InputMessage" />
+      <wsdl:output wsaw:Action="http://BreakthroughWPF/IGameConnectionService/NextMoveResponse" message="tns:IGameConnectionService_NextMove_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

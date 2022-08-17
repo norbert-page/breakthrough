@@ -1,0 +1,8 @@
+﻿<Window x:Class="BreakthroughWPF.OperationPendingBox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Please wait..." Height="73" Width="Auto" WindowStartupLocation="CenterOwner" Topmost="False" ResizeMode="NoResize" ShowInTaskbar="False" IsEnabled="True" WindowStyle="SingleBorderWindow" SizeToContent="WidthAndHeight">
+    <Grid>
+        <Label Name="messageLabel" Height="Auto" VerticalAlignment="Stretch" VerticalContentAlignment="Center">Operation pending, please wait...</Label>
+    </Grid>
+</Window>

@@ -1,0 +1,145 @@
+﻿<Window x:Class="BreakthroughWPF.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Breakthrough | Norbert Pionka" Height="550.44" Width="625.893" Name="MainWindow" WindowStyle="SingleBorderWindow" MinWidth="250" MinHeight="200" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ShowInTaskbar="True" WindowStartupLocation="CenterScreen" Icon="/BreakthroughWPF;component/Resources/RookYellow.ico" ResizeMode="CanResizeWithGrip" AllowsTransparency="False" Opacity="1">
+    <Grid Background="#FFECE9D8" Opacity="1" Name="grid" MinWidth="0" MinHeight="0" ShowGridLines="False">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="23" />
+            <RowDefinition Height="400*" />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="450*" />
+            <ColumnDefinition Width="180" />
+        </Grid.ColumnDefinitions>
+        <Menu Name="menu1" ForceCursor="False" IsEnabled="True" BorderThickness="1" BorderBrush="DarkGray" Foreground="Black" Grid.ColumnSpan="2" Height="23" VerticalAlignment="Top">
+            <Menu.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" >
+                        <GradientStop Color="WhiteSmoke" Offset="0.5" />
+                        <GradientStop Color="LightGray" Offset="1.0" />
+                </LinearGradientBrush>
+            </Menu.Background>
+            <MenuItem AllowDrop="False" Foreground="Black" Header="Game" Name="GameMenuItem" OverridesDefaultStyle="False" Click="GameMenuItem_Click">
+                <MenuItem Header="New game" Name="NewGameMenuItem" Click="NewGameMenuItem_Click" />
+                <MenuItem Header="New network game" Name="NewNetworkGameMenuItem"  Click="NewNetworkGameMenuItem_Click" />
+                <MenuItem Header="Load board" Click="MenuItem_Click_2" />
+                <MenuItem Header="Save as..." Click="SaveAs_Click"/>
+                <MenuItem Header="Exit" Click="MenuItem_Click"/>
+            </MenuItem>
+            <MenuItem Header="About" Click="MenuItem_Click_1" />
+        </Menu>
+        <StatusBar Name="statusBar1" Grid.ColumnSpan="2" Grid.Row="2" Margin="0,0.872,0,0">
+            <StatusBarItem BorderThickness="1" BorderBrush="DarkGray" Name="StatBar1" Width="100">Move: none</StatusBarItem>
+            <StatusBarItem BorderThickness="1" BorderBrush="DarkGray" Name="StatBar2">Welcome in Breakthrough world!</StatusBarItem>
+        </StatusBar>
+        <Canvas Grid.Row="1" Name="BoardCanvas" Background="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <Rectangle Grid.Row="1" HorizontalAlignment="Right" Name="rectangle1" Fill="LightBlue" Stroke="Gray" Width="6" Opacity="0.3" PreviewMouseLeftButtonDown="rectangle1_PreviewMouseLeftButtonDown" MouseEnter="rectangle1_MouseEnter" MouseLeave="rectangle1_MouseLeave" />
+        <ScrollViewer Grid.Row="1" Grid.Column="1" CanContentScroll="False" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+		    <StackPanel Margin="3,3,3,3" Grid.Column="1" Grid.Row="1" CanVerticallyScroll="True" CanHorizontallyScroll="True" Focusable="True">
+                
+		        <Expander Margin="0, 5, 0, 0" Height="Auto" Grid.Column="1" Grid.Row="1" HorizontalContentAlignment="Stretch" Header="Moves description" Name="movesExpander" VerticalAlignment="Top" IsEnabled="True" BorderBrush="Gray" IsExpanded="True">
+                    <Expander.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1" Opacity="1">
+                            <GradientStop Color="Lavender" Offset="0.2" />
+                            <GradientStop Color="LightSkyBlue" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Expander.Background>
+                    <Expander.Content>
+                        <Grid HorizontalAlignment="Stretch" Height="Auto" MinHeight="100" MaxHeight="230" ClipToBounds="False">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="15" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Row="0" Grid.Column="0" Margin="0" Padding="0" HorizontalAlignment="Center" FontSize="10" Foreground="CadetBlue">White</Label>
+                            <Label Grid.Row="0" Grid.Column="1" Margin="0" Padding="0" HorizontalAlignment="Center" FontSize="10" Foreground="CadetBlue">Black</Label>
+                            <ListBox Grid.Row="1" Grid.Column="0" Name="movesExpanderPlayerWhite" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" SelectionMode="Single">
+
+			                </ListBox>
+                            <ListBox Grid.Row="1" Grid.Column="1" Name="movesExpanderPlayerBlack" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" SelectionMode="Single">
+
+                            </ListBox>
+                        </Grid>
+			        </Expander.Content>
+		        </Expander>
+                
+                <Expander Margin="0, 5, 0, 0" Grid.Column="1" Grid.Row="1" HorizontalContentAlignment="Stretch" Header="Game control" Name="gameControlExpander" VerticalAlignment="Top" IsEnabled="True" BorderBrush="Gray" IsExpanded="True">
+                    <Expander.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1" Opacity="1">
+                            <GradientStop Color="Lavender" Offset="0.2" />
+                            <GradientStop Color="LightSkyBlue" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Expander.Background>
+                    <Expander.Content>
+                        <Grid HorizontalAlignment="Stretch" Height="50" ClipToBounds="False">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="25" />
+                                <RowDefinition Height="25" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Button Name="undo" Grid.Row="0" Grid.Column="0" Margin="0,0,0,0" Click="undo_Click" ToolTip="Alt+U" IsEnabled="True">Undo</Button>
+                            <Button Name="redo" Grid.Row="0" Grid.Column="1" Margin="0,0,0,0" Click="redo_Click" ToolTip="Alt+R" IsEnabled="False">Redo</Button>
+                            <Button Name="pause" Grid.Row="1" Grid.Column="0" Margin="0,0,0,0" Click="pause_Click" ToolTip="Alt+P" IsEnabled="True">Pause</Button>
+                            <Button Name="resume" Grid.Row="1" Grid.Column="1" Margin="0,0,0,0" Click="resume_Click" ToolTip="Alt+E" IsEnabled="False">Resume/Start</Button>
+                        </Grid>
+                    </Expander.Content>
+                </Expander>
+                <Expander  Margin="0, 5, 0, 0" BorderBrush="Gray" Header="Move hint" HorizontalContentAlignment="Stretch" IsEnabled="True" IsExpanded="False" Name="expanderHint">
+                    <Expander.Background>
+                        <LinearGradientBrush EndPoint="1,1" Opacity="1" StartPoint="0,0">
+                            <GradientStop Color="Lavender" Offset="0.2" />
+                            <GradientStop Color="LightSkyBlue" Offset="1" />
+                        </LinearGradientBrush>
+                    </Expander.Background>
+                    <Label HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Foreground="Red" Name="hintLabel">aaaa</Label>
+                </Expander>
+                <Expander  Margin="0, 5, 0, 0" BorderBrush="Gray" Header="Board modification" HorizontalContentAlignment="Stretch" IsEnabled="True" IsExpanded="False" Name="expanderModify">
+                    <Expander.Background>
+                        <LinearGradientBrush EndPoint="1,1" Opacity="1" StartPoint="0,0">
+                            <GradientStop Color="Lavender" Offset="0.2" />
+                            <GradientStop Color="LightSkyBlue" Offset="1" />
+                        </LinearGradientBrush>
+                    </Expander.Background>
+                    <Grid ClipToBounds="False" HorizontalAlignment="Stretch">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Row="0" Margin="0" Name="modifyButton" Click="modifyButton_Click">Modify board</Button>
+                        <Button Grid.Row="0" Margin="0, 0, 85, 0" Width="86" Name="startWhiteButton" Visibility="Hidden" Click="startWhiteButton_Click">White start</Button>
+                        <Button Margin="0,0,0.5,0" Width="85" Name="startBlackButton" Visibility="Hidden" HorizontalAlignment="Right" Click="startBlackButton_Click">Black start</Button>
+                        <Button Grid.Row="1" Margin="0" Name="clearBoardButton" Visibility="Collapsed" Click="clearBoardButton_Click">Clear board</Button>
+                    </Grid>
+                </Expander>
+                <Expander Margin="0, 5, 0, 0" Grid.Column="1" Grid.Row="1" HorizontalContentAlignment="Stretch" Header="Game status" Name="gameStatusExpander" VerticalAlignment="Top" IsEnabled="True" BorderBrush="Gray" IsExpanded="False">
+                    <Expander.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1" Opacity="1">
+                            <GradientStop Color="Lavender" Offset="0.2" />
+                            <GradientStop Color="LightSkyBlue" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Expander.Background>
+                    <Expander.Content>
+                        <ScrollViewer CanContentScroll="False" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto" MaxHeight="120">
+                            <RichTextBox Name="textBox" Width="148" Background="#bbffffff" IsReadOnly="True">
+                                <FlowDocument>
+                                    <Paragraph Name="textBoxParagraph" AllowDrop="False" FontSize="11">
+                                    </Paragraph>
+                                </FlowDocument>
+                            </RichTextBox>
+                        </ScrollViewer>
+                    </Expander.Content>
+                </Expander>
+                <!--<MediaElement Height="49" Name="mediaElement1" Width="107" Source="F:\music\video gra\Video - 02. Papierowy księżyc.mp3" />-->
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="53a5e35f-c36c-499b-9f3b-ed9a12660e2b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="net.tcp://yey:8888/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BreakthroughWPF.wsdl" MetadataType="Wsdl" ID="b28bf07d-bf19-4123-b9be-7f978d8a9cc1" SourceId="1" SourceUrl="net.tcp://yey:8888/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="ae13e609-4c4f-4927-9189-2fa776baaf3a" SourceId="1" SourceUrl="net.tcp://yey:8888/mex" />
+    <MetadataFile FileName="BreakthroughWPF.xsd" MetadataType="Schema" ID="3cdab0ee-999d-48d4-98de-37653f59263b" SourceId="1" SourceUrl="net.tcp://yey:8888/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="217f15dd-b838-4648-9b21-fe5bc5ac2f07" SourceId="1" SourceUrl="net.tcp://yey:8888/mex" />
+    <MetadataFile FileName="BreakthroughWPF1.xsd" MetadataType="Schema" ID="9aedafd7-ffcc-49dc-b0c2-f18330d0d074" SourceId="1" SourceUrl="net.tcp://yey:8888/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
