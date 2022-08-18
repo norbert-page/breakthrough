@@ -47,9 +47,19 @@ netsh interface teredo show state
 netsh p2p pnrp peer set machinename publish=start autopublish=enable
 netsh p2p pnrp peer show machinename
 ```
-To verify that P2P network is working properly, initiate network discovery of players in the game in the background and use `netsh p2p pnrp cloud show list` and check if `GLOBAL` cloud is available. **Changes to configuration may require a restart to take effect.**
+To verify that P2P network is working properly, initiate network discovery of players in the game in the background and use `netsh p2p pnrp cloud show list` and check if `GLOBAL` cloud is available. **Changes to system configuration may require a restart to take effect.**
+
+Furthemore, it is recommended to start Breakthrough app with administrator privileges to avoid potential issues with permissions. To do so, one may first start a command line with administrator privileges, navigating to the appropriate directory (this can be checked by inspecting the Start Menu shortcut for the game) and then starting the Breakthrough app using the command:
+```
+start ./Breakthrough.appref-ms
+```
 
 #### Errors related to network games
 **"Unable to access a key"** (Windows 10)
 This solution worked for me ([source](https://answers.microsoft.com/en-us/windows/forum/all/unable-to-start-peer-name-resolution-protocol/2b37dc4c-2153-443c-b0d5-adda6771ceb5)):
 > this is what worked for me.  go to C:\ProgramData\Microsoft\Crypto\RSA and right-click on MachineKeys - Properties - Security and add Local Service to the Groups or user names.  To do so, click edit - Add - and type "local service" and hit check names, then click ok and click full control under permissions for local service, click ok.  you may get an error as it tries to set user "local service" for all keys which it can not because permissions are not allowed.  now go start your three services... 
+
+
+**"The service endpoint failed to listen on the URI because access was denied"**
+
+Check [this solution](https://stackoverflow.com/questions/24576646/wcf-error-with-net-tcp-the-service-endpoint-failed-to-listen-on-the-uri-because) or its [archived copy](https://web.archive.org/web/20220818223621/https://stackoverflow.com/questions/24576646/wcf-error-with-net-tcp-the-service-endpoint-failed-to-listen-on-the-uri-because).
