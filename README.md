@@ -49,7 +49,7 @@ netsh p2p pnrp peer show machinename
 ```
 To verify that P2P network is working properly, initiate network discovery of players in the game in the background and use `netsh p2p pnrp cloud show list` and check if `GLOBAL` cloud is available. **Changes to system configuration may require a restart to take effect.**
 
-Furthemore, it is recommended to start Breakthrough app with administrator privileges to avoid potential issues with permissions. To do so, one may first start a command line with administrator privileges, navigating to the appropriate directory (this can be checked by inspecting the Start Menu shortcut for the game) and then starting the Breakthrough app using the command:
+Furthemore, for network play, it is recommended to start Breakthrough app with administrator privileges to avoid potential issues with permissions. To do so, one may first start a command line with administrator privileges, navigating to the appropriate directory (this can be checked by inspecting the Start Menu shortcut for the game) and then starting the Breakthrough app using the command:
 ```
 start ./Breakthrough.appref-ms
 ```
