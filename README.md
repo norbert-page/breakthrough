@@ -1,7 +1,7 @@
 # Breakthrough
 [![GitHub](https://img.shields.io/github/license/norbert-page/breakthrough)](https://github.com/norbert-page/breakthrough/blob/main/LICENSE)
 
-This project implements a [Breakthrough](https://en.wikipedia.org/wiki/Breakthrough_(board_game)) board game as a Windows GUI application. The features include:
+This project implements a [Breakthrough](https://en.wikipedia.org/wiki/Breakthrough_(board_game)) board game as a Windows GUI application. For a quick glimpse you may want to check [videos](videos) or [screenshots](screenshots). The features include:
 * Games on the same computer with other people, playing with a computer or observing games between two computer players. Computer uses a MinMax algorithm.
 * Games over network with remote players. Uses P2P, serverless communication to allow for dynamic discovery of available players, both in local network and globally over the Internet (no explicit IP address sharing needed).
 * Animated interface. For instance, clicking on a pawn shows moves that are available.
@@ -13,7 +13,7 @@ This project implements a [Breakthrough](https://en.wikipedia.org/wiki/Breakthro
 ## Technology stack
 The game was written for a university assignment in 2008 and 2009. The task was to implement a breakthrough board game using [Delphi](https://en.wikipedia.org/wiki/Delphi_(software)). I was quite surprised by this as the last time I had used Pascal was during primary school. To do something more exciting and progressive, I have learned and used C# and .NET Framework 3.5 technologies instead, including [Windows Presentation Foundation (WPF)](https://en.wikipedia.org/wiki/Windows_Presentation_Foundation) and [Windows Communication Foundation (WCF)](https://en.wikipedia.org/wiki/Windows_Communication_Foundation).
 
-First, WPF makes use of DirectX which allows for smooth time-based animations. Second, WCF enabled P2P-based, serverless discovery of available players, both in the local network and on the global Internet, without the need to exchange IPs. Breakthrough is IPv6-native and to work in IPv4-only networks makes use of Teredo tunneling technology implemented by Microsoft. All those thechnologies aged quite well, although [.Net Core](https://en.wikipedia.org/wiki/.NET) (or simply .NET) seems to be a successor to .NET Framework as explained [here](https://devblogs.microsoft.com/dotnet/net-core-is-the-future-of-net/).
+First, WPF makes use of DirectX which allows for smooth time-based animations. Second, WCF enabled P2P-based, serverless discovery of available players, both in the local network and on the global Internet, without the need to exchange IPs. Breakthrough is IPv6-native and to work in IPv4-only networks makes use of Teredo tunneling technology implemented by Microsoft. All these thechnologies aged quite well, although [.Net Core](https://en.wikipedia.org/wiki/.NET) (or simply .NET) seems to be a successor to .NET Framework as explained [here](https://devblogs.microsoft.com/dotnet/net-core-is-the-future-of-net/).
 
 ## 2009: Original readme in polish
 Aplikacja wymaga kilku usług niedawno wprowadzonych przez Microsoft, dlatego proszę testować pod Windows Vista z najnowszymi łatami, gdyż przy wcześniejszych wersjach mogą być problemy.
