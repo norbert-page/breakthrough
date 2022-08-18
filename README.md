@@ -57,7 +57,7 @@ start ./Breakthrough.appref-ms
 #### Errors related to network games
 **"Unable to access a key"** (Windows 10)
 This solution worked for me ([source](https://answers.microsoft.com/en-us/windows/forum/all/unable-to-start-peer-name-resolution-protocol/2b37dc4c-2153-443c-b0d5-adda6771ceb5)):
-> this is what worked for me.  go to C:\ProgramData\Microsoft\Crypto\RSA and right-click on MachineKeys - Properties - Security and add Local Service to the Groups or user names.  To do so, click edit - Add - and type "local service" and hit check names, then click ok and click full control under permissions for local service, click ok.  you may get an error as it tries to set user "local service" for all keys which it can not because permissions are not allowed.  now go start your three services... 
+> go to C:\ProgramData\Microsoft\Crypto\RSA and right-click on MachineKeys - Properties - Security and add Local Service to the Groups or user names.  To do so, click edit - Add - and type "local service" and hit check names, then click ok and click full control under permissions for local service, click ok.  you may get an error as it tries to set user "local service" for all keys which it can not because permissions are not allowed.
 
 
 **"The service endpoint failed to listen on the URI because access was denied"**
