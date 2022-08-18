@@ -11,7 +11,7 @@ This project implements a [Breakthrough](https://en.wikipedia.org/wiki/Breakthro
 * Players can ask a computer for move suggestions. Those are presented with an animation on the board.
 
 ## Screenshot 
-![Screenshot](screenshots/breakthrough%20-%20screenshot%204.png)
+![Screenshot](screenshots/breakthrough_-_screenshot_4.png)
 
 ## Technology stack
 The game was written for a university assignment in 2008 and 2009. The task was to implement a breakthrough board game using [Delphi](https://en.wikipedia.org/wiki/Delphi_(software)). I was quite surprised by this as the last time I had used Pascal was during primary school. To do something more exciting and progressive, I have learned and used C# and .NET Framework 3.5 technologies instead, including [Windows Presentation Foundation (WPF)](https://en.wikipedia.org/wiki/Windows_Presentation_Foundation) and [Windows Communication Foundation (WCF)](https://en.wikipedia.org/wiki/Windows_Communication_Foundation).
