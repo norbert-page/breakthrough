@@ -24,6 +24,8 @@ Only files from the `release` directory are needed but for convenience you may w
 
 Installer may ask you to allow for the installation of .Net Framework 3.5 which is required.
 
+This application uses `App.config` file for configuration, including default MeshID and default port. Multiple instances may use the same port thanks to NetTcpPortSharing. Defaults are sufficient -- there is no need to configure this file.
+
 ### Play over network
 On both Windows 10 and 11, Breakthrough requires additional configuration for network play to work. Disable firewall or allow connections for Breakthrough (firewall should ask whether to allow once you try to initiate a network game). In addition, the following Windows Services must be enabled:
 - NetTcpPortSharing
@@ -51,35 +53,3 @@ To verify that P2P network is working properly, initiate network discovery of pl
 **"Unable to access a key"** (Windows 10)
 This solution worked for me ([source](https://answers.microsoft.com/en-us/windows/forum/all/unable-to-start-peer-name-resolution-protocol/2b37dc4c-2153-443c-b0d5-adda6771ceb5)):
 > this is what worked for me.  go to C:\ProgramData\Microsoft\Crypto\RSA and right-click on MachineKeys - Properties - Security and add Local Service to the Groups or user names.  To do so, click edit - Add - and type "local service" and hit check names, then click ok and click full control under permissions for local service, click ok.  you may get an error as it tries to set user "local service" for all keys which it can not because permissions are not allowed.  now go start your three services... 
-
-## 2009: Original readme in polish
-Aplikacja wymaga kilku usług niedawno wprowadzonych przez Microsoft, dlatego proszę testować pod Windows Vista z najnowszymi łatami, gdyż przy wcześniejszych wersjach mogą być problemy.
-
-Proszę wyłączyć firewall systemowy.
-
-Aplikacja wymaga sieci IPv6 lub tunelowania Teredo, które domyślnie jest wyłączone np. w Windows XP.
-Musi być aktywna w windowsie usługa netTcpPortSharing (w wer. PL może mieć inną nazwę) i usługi związane z PNRP (Peer Name Resolution Protocol).
-
-W windowsie mogą pomóc następujące polecenia (proszę najpierw spróbować zwyczajnie odpalić):
-netsh interface ipv6 install
-netsh interface ipv6 set teredo client
-
-netsh interface teredo set state client
-netsh interface teredo show state
-
-netsh p2p pnrp peer set machinename publish=start autopublish=enable
-netsh p2p pnrp peer show machinename
-
-Następujące polecenie powinno wyświetlić chmurę "Global" po starcie aplikacji, gdy zacznie się szukanie hostów, w przeciwnym przypadku coś jest nie tak:
-netsh p2p pnrp cloud show list
-
-Jeżeli wszystko dobrze jest skonfigurowane i jest połączenie z internetem, to wykrywanie hostów powinno działać globalnie, a nie tylko w sieci lokalnej.
-
-Testowany na Windows Vista SP1 Business Edition EN z najnowszymi łatami, kompilowane pod MS Visual Studio 2008 SP1 z najnowszymi łatami.
-Program nie kompiluje się na starszych wersjach Visual Studio (bez SP).
-
-Program korzysta z pliku konfiguracyjnego App.config, gdzie jest zapisany wzorzec adresu z MeshID i domyślny port. Można uruchomić kilka instancji aplikacji na jednym komputerze - używają wtedy one tego samego portu, jednak ze względu na wykorzystanie współdzielenia portu powinny działać bez problemu (przetestowane) (inny jest endpoint, kończy się identyfikatorem użytkownika i doklejonym na końcu losowym łancuchem znaków).
-
-Proszę o cierpliwość podczas wyszukiwania hostów, jednym razem może zadziałać od razu, a innym razem może trwać dłużej.
-
-Jeżeli będzie Pan testował na jednym komputerze, to proszę pamiętać, że można zmieniać rozmiar okna głównego gry oraz chować cały prawy panel z opcjami :)
