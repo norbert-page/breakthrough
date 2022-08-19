@@ -1,7 +1,7 @@
 # Breakthrough
 [![GitHub](https://img.shields.io/github/license/norbert-page/breakthrough)](https://github.com/norbert-page/breakthrough/blob/main/LICENSE)
 
-This project implements a [breakthrough](https://en.wikipedia.org/wiki/Breakthrough_(board_game)) board game as a Windows GUI application. For a quick glimpse you may want to check [videos](videos) or [screenshots](screenshots). The features include:
+This project implements a [breakthrough](https://en.wikipedia.org/wiki/Breakthrough_(board_game)) board game as a Windows GUI application. For a quick glimpse you may want to check videos [available on youtube](https://www.youtube.com/playlist?list=PLnw-SyEulTuayiBLVrXf_kNalQ0NuzB-O) and in [this repository](videos) or [screenshots](screenshots). The features include:
 * Games on the same computer with other people, playing with a computer or observing games between two computer players. Computer uses a MinMax algorithm.
 * Games over network with remote players. Uses P2P, serverless communication to allow for dynamic discovery of available players, both in local network and globally over the Internet (no explicit IP address sharing needed).
 * Animated interface. For instance, clicking on a pawn shows moves that are available.
@@ -11,8 +11,8 @@ This project implements a [breakthrough](https://en.wikipedia.org/wiki/Breakthro
 * Players can ask a computer for move suggestions. Those are presented with an animation on the board.
 
 ## Screenshot 
+Additional [screenshots](screenshots) are available. Videos better visualize time-based animations and are [available on youtube](https://www.youtube.com/playlist?list=PLnw-SyEulTuayiBLVrXf_kNalQ0NuzB-O) and also in the [videos folder](videos) in this repository.
 ![Screenshot](screenshots/breakthrough_-_screenshot_4.png)
-Additional [videos](videos) and [screenshots](screenshots) are available. Videos better visualize time-based animations.
 
 ## Technology stack
 The game was written for a university assignment in 2008 and 2009. The task was to implement a [breakthrough board game](https://en.wikipedia.org/wiki/Breakthrough_(board_game)) using [Delphi](https://en.wikipedia.org/wiki/Delphi_(software)). I was quite surprised by this as the last time I had used Pascal was during primary school. To do something more exciting and progressive, I have learned and used C# and .NET Framework 3.5 technologies instead, including [Windows Presentation Foundation (WPF)](https://en.wikipedia.org/wiki/Windows_Presentation_Foundation) and [Windows Communication Foundation (WCF)](https://en.wikipedia.org/wiki/Windows_Communication_Foundation).
